@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="style-encode.css">
+  <title>Codificador de texto - Alura Challenge</title>
+</head>
+<body>  
+  <header class="encabezado">
+    <div class="titulo">
+      <h1 class="tit1">  &lt Encriptador de Texto &gt</Encriptador></h1>
+      <h2 class="subtitulo">Considere que:</h2>
+        <p class="items">Las letras pueden estar escritas en mayúscula o minúscula.</p>
+        <p class="items">No debe ingresar letras con acentos, ni caracteres especiales. </p>
+        <p class="items">No se permiten números ni símbolos.</p>
+    </div>    
+    <div id="logos">
+      <img class="logo" src="imagenes/Vector.png" alt="alura logo corto">
+    </div>    
+  </header>
+  <main class="contenedor">
+
+   
+    <section class="encriptado">
+      <form>
+        <textarea id="a-encriptar" cols="70" rows="5" placeholder="Ingresar texto a encriptar."></textarea>
+        <button id="encriptar">ENCRIPTAR TEXTO</button>
+      </form>
+      <span id="mensaje-encriptado">Aqui aparecera su texto encriptado:</span><button id="copy1">Copiar texto</button>
+    </section>
+
+    <section class="desencriptado">
+      <form>
+        <textarea id='a-desencriptar' cols="70" rows="5" placeholder="Ingresar texto a desencriptar."></textarea>
+        <button id="desencriptar">DESENCRIPTAR TEXTO</button>
+      </form>
+      <span id="mensaje-desencriptado">Aqui aparecera su texto desencriptado:</span><button id="copy2">Copiar texto</button>
+    </section>
+    
+  </main> 
+  <footer id="pie-pagina"> 
+    <a href="https://github.com/pinoen" target="_blank"><img class="imgfooter" src="imagenes/code2.png"> </a>
+    <p class="code">Accede al código, dando clic sobre la imagen</p>
+  </footer>
+  <script src="encode.js"></script>
+</body>
+</html>
